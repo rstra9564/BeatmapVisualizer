@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { detectBpmFromUrl } from '../lib/bpmDetector'
 
-export const DEFAULT_TRACK = '/default.mp3'
+export const DEFAULT_TRACK = `${import.meta.env.BASE_URL}default.mp3`
 const DEFAULT_NAME = 'Default track'
 
 function waitForAudioReady(audio: HTMLAudioElement): Promise<void> {

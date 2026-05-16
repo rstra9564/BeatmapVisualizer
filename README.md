@@ -30,3 +30,19 @@ Drop your file at `public/default.mp3` (overwrite the existing demo track). The 
 - React 19 + Vite
 - Web Audio API (`AnalyserNode`, `MediaElementAudioSourceNode`)
 - Canvas 2D (particles + waveform)
+
+## GitHub Pages
+
+Live site: **https://rstra9564.github.io/BeatmapVisualizer/**
+
+1. In the repo on GitHub, go to **Settings → Pages**.
+2. Under **Build and deployment**, set **Source** to **GitHub Actions** (not “Deploy from a branch” of raw source).
+3. Push to `main` — the workflow in `.github/workflows/deploy.yml` builds `dist` and deploys it.
+
+To test the production base path locally:
+
+```bash
+npm run preview:gh
+```
+
+Then open the URL shown (paths will include `/BeatmapVisualizer/`).
