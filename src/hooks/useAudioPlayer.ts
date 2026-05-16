@@ -99,7 +99,7 @@ export function useAudioPlayer() {
         setError(
           err instanceof Error
             ? err.message
-            : 'Could not load audio. Run via npm run dev and open http://localhost:5173',
+            : 'Could not load audio. Try refreshing the page.',
         )
       }
     },
@@ -186,7 +186,7 @@ export function useAudioPlayer() {
         setError(
           err instanceof Error
             ? err.message
-            : 'Could not load audio. Run via npm run dev and open http://localhost:5173',
+            : 'Could not load audio. Try refreshing the page.',
         )
       }
     }

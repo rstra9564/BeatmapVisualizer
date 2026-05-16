@@ -47,23 +47,6 @@
   font-size: 0.95rem;
 }
 
-.browser-hint {
-  margin-top: 0.65rem !important;
-  font-size: 0.8rem !important;
-  opacity: 0.55 !important;
-}
-
-.browser-hint a {
-  color: #00f5ff;
-}
-
-.browser-hint code {
-  font-size: 0.85em;
-  padding: 0.1em 0.35em;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.08);
-}
-
 .audio-error {
   width: min(520px, 100%);
   margin: 0;

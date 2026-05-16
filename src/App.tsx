@@ -54,11 +54,6 @@ function App() {
         <div className="brand">
           <h1>Beatmap Visualizer</h1>
           <p>Drop an MP3, pick a theme, hit play.</p>
-          <p className="browser-hint">
-            Run <code>npm run dev</code> and open{' '}
-            <a href="http://localhost:5173">localhost:5173</a> in Chrome, Edge, or
-            Firefox.
-          </p>
         </div>
 
         {error && (
