@@ -35,14 +35,22 @@ Drop your file at `public/default.mp3` (overwrite the existing demo track). The 
 
 Live site: **https://rstra9564.github.io/BeatmapVisualizer/**
 
-1. In the repo on GitHub, go to **Settings → Pages**.
-2. Under **Build and deployment**, set **Source** to **GitHub Actions** (not “Deploy from a branch” of raw source).
-3. Push to `main` — the workflow in `.github/workflows/deploy.yml` builds `dist` and deploys it.
+### One-time GitHub setup (required)
 
-To test the production base path locally:
+A blank white page + `main.tsx` 404 means Pages is serving **source code**, not the **built** app.
+
+1. Push to `main` and wait for the **Deploy to GitHub Pages** workflow to finish (green check on the **Actions** tab).
+2. Go to **Settings → Pages**.
+3. Under **Build and deployment → Source**, choose **Deploy from a branch**.
+4. Set **Branch** to **`gh-pages`** and folder **`/ (root)`** — **not** `main`.
+5. Save, wait 1–2 minutes, hard-refresh the live URL (Ctrl+Shift+R).
+
+The workflow builds `dist` and pushes only those files to the `gh-pages` branch.
+
+### Test production paths locally
 
 ```bash
 npm run preview:gh
 ```
 
-Then open the URL shown (paths will include `/BeatmapVisualizer/`).
+Then open the URL shown (paths include `/BeatmapVisualizer/`).
